@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Seq.Apps" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="./obj/publish/**/*" Exclude="./obj/publish/Seq.App.Detective.dll;./obj/publish/Seq.Apps.dll;./obj/publish/Serilog.dll" Pack="true" PackagePath="lib/$(TargetFramework)" />
+  </ItemGroup>
+
+</Project>
